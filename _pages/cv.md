@@ -9,78 +9,62 @@ redirect_from:
 
 {% include base_path %}
 
-<!-- 
-NOTE: This is a markdown-based CV page. For the JSON-based CV template, see /cv-json/
-The content below contains placeholder examples. Replace with your own information.
--->
-
-<!-- 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
--->
+* **M.Sc. in Computer Science (Image Processing)** — *Amirkabir University of Technology*  
+  *2023 – present*
+* **B.Sc. in Computer Engineering** — *Amirkabir University of Technology*  
+  *2018 – 2023*
 
-<!-- 
-Work experience
+Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* **Research Assistant** *(Institute Pasteur — Paris, France)*  
+  *Dec. 2024 – Jun. 2025*  
+  * Engineered deep-learning pipelines for glomeruli segmentation using **U-Net**, **Mask R-CNN**, and multi-task **Cerberus** models.  
+  * Built reproducible high-throughput kidney biopsy analysis workflows.
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* **Research Assistant** *(Amirkabir University of Technology — Tehran, Iran)*  
+  *May 2023 – Oct. 2023*  
+  * Implemented image restoration models (**MIMO-UNet**, **HiNet**) for deblurring benchmarks.  
+  * Evaluated algorithmic performance and transitioned research into practical applications.
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
--->
+* **Backend Developer** *(ASA Co — Tehran, Iran)*  
+  *Aug. 2022 – Aug. 2024*  
+  * Maintained backend infrastructure for a Robo-Adviser platform serving **5,000+ users**.  
+  * Built and monitored **RESTful APIs** using **FastAPI** + **PostgreSQL**, reducing API latency by 15%.
 
-<!-- 
-Skills
+<!-- Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
--->
+* **Machine Learning** — Classification, Clustering, PCA, Benchmarking  
+* **Deep Learning** — U-Net, Mask R-CNN, BERT, LSTM  
+* **Computer Vision** — Image restoration, segmentation, point-cloud processing  
+* **Programming** — Python, FastAPI, SQL, NumPy, PyTorch  
+* **Data Tools** — scikit-learn, Open3D, Blender, PostgreSQL  
+* **Other** — Git, Linux, Agile development
 
 Publications
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% if post.published == false %}
-      {% continue %}
-    {% endif %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
+<ul>{% for post in site.publications reversed %}
+  {% if post.published == false %}
+    {% continue %}
+  {% endif %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
+
 Talks
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% if post.published == false %}
-      {% continue %}
-    {% endif %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
+<ul>{% for post in site.talks reversed %}
+  {% if post.published == false %}
+    {% continue %}
+  {% endif %}
+  {% include archive-single-talk-cv.html %}
+{% endfor %}</ul>
+
 Teaching
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% if post.published == false %}
-      {% continue %}
-    {% endif %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-<!-- 
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
--->
+<ul>{% for post in site.teaching reversed %}
+  {% if post.published == false %}
+    {% continue %}
+  {% endif %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul> -->
