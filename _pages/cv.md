@@ -9,12 +9,20 @@ redirect_from:
 
 {% include base_path %}
 
+<!-- 
+NOTE: This is a markdown-based CV page. For the JSON-based CV template, see /cv-json/
+The content below contains placeholder examples. Replace with your own information.
+-->
+
+<!-- 
 Education
 ======
 * Ph.D in Version Control Theory, GitHub University, 2018 (expected)
 * M.S. in Jekyll, GitHub University, 2014
 * B.S. in GitHub, GitHub University, 2012
+-->
 
+<!-- 
 Work experience
 ======
 * Spring 2024: Academic Pages Collaborator
@@ -31,7 +39,9 @@ Work experience
   * GitHub University
   * Duties included: Tagging issues
   * Supervisor: Professor Git
-  
+-->
+
+<!-- 
 Skills
 ======
 * Skill 1
@@ -40,25 +50,37 @@ Skills
   * Sub-skill 2.2
   * Sub-skill 2.3
 * Skill 3
+-->
 
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
+    {% if post.published == false %}
+      {% continue %}
+    {% endif %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
 Talks
 ======
   <ul>{% for post in site.talks reversed %}
+    {% if post.published == false %}
+      {% continue %}
+    {% endif %}
     {% include archive-single-talk-cv.html  %}
   {% endfor %}</ul>
   
 Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
+    {% if post.published == false %}
+      {% continue %}
+    {% endif %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
+<!-- 
 Service and leadership
 ======
 * Currently signed in to 43 different slack teams
+-->

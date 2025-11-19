@@ -1,152 +1,276 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "Yalda Eftekhari",
+    "label": "Machine Learning Computer Vision Intern",
+    "email": "yalda.ef@gmail.com",
+    "phone": "+33 7 66 45 82 81",
+    "website": "https://yalda-eftekhari.github.io",
+    "summary": "Master student in Computer Science at Sorbonne University, specializing in image processing, computer vision, and deep learning. Experienced in developing end-to-end ML and vision pipelines using PyTorch, TensorFlow, and OpenCV. Passionate about applying AI to real-world problems, innovation, and scalable software solutions. Seeking a 6-month internship (Mar–Aug 2025) to contribute to applied machine learning and computer vision projects in research or industry.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "city": "Paris",
+      "countryCode": "FR",
+      "region": "Île-de-France"
     },
     "profiles": [
       {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
-      },
-      {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "Yalda-Eftekhari",
+        "url": "https://github.com/Yalda-Eftekhari"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "yalda-eftekhari",
+        "url": "https://www.linkedin.com/in/yalda-eftekhari"
       }
     ]
   },
-  "work": [],
-  "education": [
+  "work": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
+      "company": "Institut Pasteur",
+      "position": "Research Assistant",
+      "website": "",
+      "startDate": "2024-12",
+      "endDate": "2025-06",
+      "summary": "Engineered and benchmarked deep learning pipelines for glomeruli segmentation in renal pathology using U-Net, Mask R-CNN, and multi-task models (Cerberus). Enabled reproducible and high-throughput biopsy analysis for improved kidney disease assessment.",
+      "highlights": [
+        "Engineered and benchmarked deep learning pipelines for glomeruli segmentation in renal pathology",
+        "Used U-Net, Mask R-CNN, and multi-task models (Cerberus)",
+        "Enabled reproducible and high-throughput biopsy analysis for improved kidney disease assessment"
+      ]
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
+      "company": "Amirkabir University of Technology",
+      "position": "Research Assistant",
+      "website": "",
+      "startDate": "2023-05",
+      "endDate": "2023-10",
+      "summary": "Implemented deep image restoration models (MIMO-UNet, HiNet) for deblurring tasks, achieving improved PSNR/SSIM metrics on benchmark datasets. Evaluated algorithmic performance and translated research methods into practical solutions.",
+      "highlights": [
+        "Implemented deep image restoration models (MIMO-UNet, HiNet) for deblurring tasks",
+        "Achieved improved PSNR/SSIM metrics on benchmark datasets",
+        "Evaluated algorithmic performance and translated research methods into practical solutions"
+      ]
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
-      "courses": []
+      "company": "ASA Co",
+      "position": "Backend Developer",
+      "website": "",
+      "startDate": "2022-08",
+      "endDate": "2024-08",
+      "summary": "Collaborated in an agile 10-member team maintaining backend infrastructure for a Robo-Adviser platform serving over 5,000 users. Developed and monitored RESTful APIs using FastAPI and PostgreSQL, enhancing reliability and reducing API latency by 15%.",
+      "highlights": [
+        "Collaborated in an agile 10-member team maintaining backend infrastructure",
+        "Robo-Adviser platform serving over 5,000 users",
+        "Developed and monitored RESTful APIs using FastAPI and PostgreSQL",
+        "Enhanced reliability and reduced API latency by 15%"
+      ]
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
-  "references": [],
+  "education": [
+    {
+      "institution": "Sorbonne University",
+      "area": "Master of Science in Computer Science (Image Processing)",
+      "studyType": "Master",
+      "startDate": "2024-09",
+      "endDate": "2026-09",
+      "gpa": null,
+      "courses": [
+        "Deep Learning",
+        "Computer Vision",
+        "Biomedical Imaging",
+        "Pattern Recognition",
+        "Data Science",
+        "High Performance Computing",
+        "NLP & Information Retrieval",
+        "Cloud Computing",
+        "3D Computer Graphics"
+      ]
+    },
+    {
+      "institution": "Amirkabir University of Technology (Tehran Polytechnic)",
+      "area": "Bachelor of Science in Computer Science",
+      "studyType": "Bachelor",
+      "startDate": "2019-09",
+      "endDate": "2023-10",
+      "gpa": "18.67/20",
+      "courses": [
+        "Algorithms",
+        "Data Structures",
+        "Artificial Intelligence",
+        "Linear Optimization",
+        "Computer Graphics"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming",
+      "level": "",
+      "keywords": [
+        "Python",
+        "C++",
+        "C",
+        "MATLAB"
+      ]
+    },
+    {
+      "name": "Machine Learning & Computer Vision",
+      "level": "",
+      "keywords": [
+        "PyTorch",
+        "scikit-learn",
+        "XGBoost",
+        "OpenCV",
+        "scikit-image",
+        "Segmentation",
+        "Object Detection"
+      ]
+    },
+    {
+      "name": "3D Processing",
+      "level": "",
+      "keywords": [
+        "Blender",
+        "Point Cloud Processing"
+      ]
+    },
+    {
+      "name": "Natural Language Processing",
+      "level": "",
+      "keywords": [
+        "BERT",
+        "Hugging Face Transformers",
+        "spaCy",
+        "LangGraph"
+      ]
+    },
+    {
+      "name": "MLOps & Cloud",
+      "level": "",
+      "keywords": [
+        "Docker",
+        "Git",
+        "GitHub Actions",
+        "AWS (S3, EC2)",
+        "MLflow",
+        "Weights & Biases",
+        "Grafana",
+        "Prometheus"
+      ]
+    },
+    {
+      "name": "Backend & Databases",
+      "level": "",
+      "keywords": [
+        "FastAPI",
+        "Django",
+        "RESTful APIs",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "name": "Data Analysis & Visualization",
+      "level": "",
+      "keywords": [
+        "NumPy",
+        "Pandas",
+        "Matplotlib",
+        "Seaborn"
+      ]
+    },
+    {
+      "name": "Software & Tools",
+      "level": "",
+      "keywords": [
+        "Jupyter Notebook",
+        "LaTeX",
+        "Linux CLI"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent (TOEFL Score: 101/120)"
+    },
+    {
+      "language": "French",
+      "fluency": "Elementary"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Interest Category",
+      "keywords": [
+        "Keyword 1",
+        "Keyword 2",
+        "Keyword 3"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Reference Name",
+      "reference": "Reference details and contact information"
+    }
+  ],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "Paper Title",
+      "publisher": "Journal/Conference Name",
+      "releaseDate": "2024-01-01",
+      "website": "# URL",
+      "summary": "Brief description of the publication"
     }
   ],
   "presentations": [
     {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
+      "name": "Talk Title",
+      "event": "Conference/Event Name",
+      "date": "2024-01-01",
+      "location": "City, Country",
+      "description": "Brief description of the talk or presentation"
     }
   ],
   "teaching": [
     {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
+      "course": "Course Name",
+      "institution": "Institution Name",
+      "date": "2024-01-01",
+      "role": "Role (e.g., Teaching Assistant, Instructor)",
+      "description": "Brief description of teaching responsibilities"
     }
   ],
   "portfolio": [
     {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
+      "name": "3D Tree Detection from LiDAR Data",
+      "category": "project",
+      "date": "2024-02",
       "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+      "description": "Built a 3D tree detection and modeling workflow using Open3D, OpenAlea, and Blender; applied RANSAC and DBSCAN to LiDAR point clouds, achieving 90% point reduction while preserving geometry."
+    },
+    {
+      "name": "Web Scraping and ML for Data Analysis",
+      "category": "project",
+      "date": "2024-02",
+      "url": "",
+      "description": "Performed advanced data analysis on real-world datasets using scikit-learn, applying PCA, clustering, and time-series analysis to uncover key patterns and trends; implemented lightweight Python scrapers for data collection."
+    },
+    {
+      "name": "Text Classification Benchmark Using BERT",
+      "category": "project",
+      "date": "2024-02",
+      "url": "",
+      "description": "Fine-tuned BERT-based classifiers on an imbalanced text dataset and benchmarked against SVM, Logistic Regression, and LSTM models using metrics such as accuracy, F1, and recall."
+    },
+    {
+      "name": "Applied Image Processing",
+      "category": "project",
+      "date": "2024-09",
+      "url": "",
+      "description": "Developed image processing workflows using Python for enhancement, segmentation, and pattern recognition, integrating PCA and Eigenfaces for visual analysis."
     }
   ]
 }
