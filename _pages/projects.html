@@ -8,12 +8,35 @@ author_profile: true
 {% include base_path %}
 
 <style>
+  :root {
+    --proj-card-bg: #fcfcfc;
+    --proj-card-border: #ccc;
+    --proj-card-text: #111;
+    --proj-meta: #666;
+    --proj-link-text: #1f3b57;
+    --proj-link-hover: #0f2438;
+    --proj-link-underline: rgba(31, 59, 87, 0.25);
+    --proj-icon-filter: brightness(0) saturate(100%) invert(9%) sepia(9%) saturate(1507%) hue-rotate(169deg) brightness(92%) contrast(87%);
+  }
+
+  html[data-theme="dark"] {
+    --proj-card-bg: #2c2c2c;
+    --proj-card-border: #666;
+    --proj-card-text: #f5f5f5;
+    --proj-meta: #d0d0d0;
+    --proj-link-text: #d9e7ff;
+    --proj-link-hover: #fff;
+    --proj-link-underline: rgba(217, 231, 255, 0.35);
+    --proj-icon-filter: brightness(0) invert(88%);
+  }
+
   .proj-card {
-    border: 1.5px solid #ccc;
+    border: 1.5px solid var(--proj-card-border);
     padding: 1rem 1.3rem;
     border-radius: 6px;
     margin-bottom: 1.6rem;
-    background: #fcfcfc;
+    background: var(--proj-card-bg);
+    color: var(--proj-card-text);
   }
   .proj-card h3 {
     margin-top: 0;
@@ -21,22 +44,48 @@ author_profile: true
   }
   .proj-meta {
     float: right;
-    color: #666;
+    color: var(--proj-meta);
     font-weight: 500;
   }
   .proj-link {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
     margin-top: 0.6rem;
-    padding: 4px 10px;
-    font-size: 0.85rem;
-    border: 1px solid #888;
-    border-radius: 4px;
+    position: relative;
+    padding: 2px 0;
+    font-size: 0.92rem;
+    font-weight: 600;
     text-decoration: none;
-    color: #444 !important;
-    background: #f4f4f4;
+    color: var(--proj-link-text) !important;
+    transition: color 0.15s ease, transform 0.15s ease;
   }
   .proj-link:hover {
-    background: #e8e8e8;
+    color: var(--proj-link-hover) !important;
+    transform: translateY(-1px);
+  }
+  .proj-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background: var(--proj-link-underline);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.18s ease;
+  }
+  .proj-link:hover::after {
+    transform: scaleX(1);
+  }
+  .proj-link-icon {
+    width: 19px;
+    height: 19px;
+    display: block;
+    object-fit: contain;
+    filter: none;
+    border-radius: 3px;
   }
 </style>
 
@@ -49,11 +98,14 @@ author_profile: true
   </h3>
   <ul>
     <li>
-      Built a 3D tree detection workflow using <strong>Open3D</strong>, <strong>OpenAlea</strong>, and <strong>Blender</strong>.
+      Built a 3D tree detection And Modeling workflow using <strong>Open3D</strong>, <strong>OpenAlea</strong>, and <strong>Blender</strong>.
       Applied <strong>RANSAC</strong> + <strong>DBSCAN</strong> to reduce LiDAR points by <strong>90%</strong> while preserving geometry.
     </li>
   </ul>
-  <a class="proj-link" href="https://github.com/yourusername/your-3d-tree-project" target="_blank">GitHub</a>
+  <a class="proj-link" href="https://github.com/Yalda-Eftekhari/3D-Tree-Detection-And-Modeling-From-LiDAR-Data" target="_blank" rel="noopener">
+    <img class="proj-link-icon" src="{{ '/images/github_icon.png' | relative_url }}" alt="GitHub icon">
+    <span>View on GitHub</span>
+  </a>
 </div>
 
 <div class="proj-card">
@@ -67,7 +119,10 @@ author_profile: true
       Created lightweight Python scrapers to gather real-world datasets.
     </li>
   </ul>
-  <a class="proj-link" href="https://github.com/yourusername/webscraping-ml" target="_blank">GitHub</a>
+  <a class="proj-link" href="https://github.com/yourusername/webscraping-ml" target="_blank" rel="noopener">
+    <img class="proj-link-icon" src="{{ '/images/github_icon.png' | relative_url }}" alt="GitHub icon">
+    <span>View on GitHub</span>
+  </a>
 </div>
 
 <div class="proj-card">
@@ -81,7 +136,10 @@ author_profile: true
       models using accuracy, F1, and recall.
     </li>
   </ul>
-  <a class="proj-link" href="https://github.com/yourusername/bert-text-classification" target="_blank">GitHub</a>
+  <a class="proj-link" href="https://github.com/yourusername/bert-text-classification" target="_blank" rel="noopener">
+    <img class="proj-link-icon" src="{{ '/images/github_icon.png' | relative_url }}" alt="GitHub icon">
+    <span>View on GitHub</span>
+  </a>
 </div>
 
 <div class="proj-card">
@@ -95,11 +153,9 @@ author_profile: true
       Applied <strong>PCA</strong> and <strong>Eigenfaces</strong> for feature extraction.
     </li>
   </ul>
-  <a class="proj-link" href="https://github.com/yourusername/image-processing-project" target="_blank">GitHub</a>
+  <a class="proj-link" href="https://github.com/yourusername/image-processing-project" target="_blank" rel="noopener">
+    <img class="proj-link-icon" src="{{ '/images/github_icon.png' | relative_url }}" alt="GitHub icon">
+    <span>View on GitHub</span>
+  </a>
 </div>
-
-
-
-
-
 
