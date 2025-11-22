@@ -22,6 +22,9 @@ main:
 
   - title: "Experience"
     url: /experience/
+  
+  - title: "Skills"
+    url: /skill/
 
   # - title: "Publications"
   #   url: /publications/
