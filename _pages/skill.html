@@ -8,6 +8,18 @@ author_profile: true
 {% include base_path %}
 
 <style>
+  :root {
+    --skill-card-bg: #fcfcfc;
+    --skill-card-border: #ccc;
+    --skill-card-text: #111;
+  }
+
+  html[data-theme="dark"] {
+    --skill-card-bg: #2c2c2c;
+    --skill-card-border: #666;
+    --skill-card-text: #f5f5f5;
+  }
+
   .skill-list {
     display: flex;
     flex-direction: column;
@@ -15,10 +27,11 @@ author_profile: true
     margin-top: 1.2rem;
   }
   .skill-card {
-    border: 1.5px solid #ccc;
+    border: 1.5px solid var(--skill-card-border);
     border-radius: 6px;
     padding: 1rem 1.2rem;
-    background: #fcfcfc;
+    background: var(--skill-card-bg);
+    color: var(--skill-card-text);
   }
   .skill-card h3 {
     margin-top: 0;

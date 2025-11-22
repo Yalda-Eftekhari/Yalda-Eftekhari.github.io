@@ -8,12 +8,27 @@ author_profile: true
 {% include base_path %}
 
 <style>
+  :root {
+    --edu-card-bg: #fcfcfc;
+    --edu-card-border: #ccc;
+    --edu-card-text: #111;
+    --edu-muted: #666;
+  }
+
+  html[data-theme="dark"] {
+    --edu-card-bg: #2c2c2c;
+    --edu-card-border: #666;
+    --edu-card-text: #f5f5f5;
+    --edu-muted: #bdbdbd;
+  }
+
   .edu-card {
-    border: 1.5px solid #ccc;
+    border: 1.5px solid var(--edu-card-border);
     padding: 1.2rem 1.4rem;
     border-radius: 6px;
     margin-bottom: 1.8rem;
-    background: #fcfcfc;
+    background: var(--edu-card-bg);
+    color: var(--edu-card-text);
   }
   .edu-card h3 {
     margin-top: 0;
@@ -21,7 +36,7 @@ author_profile: true
   }
   .edu-meta {
     float: right;
-    color: #666;
+    color: var(--edu-muted);
     font-weight: 500;
   }
   .course-list {

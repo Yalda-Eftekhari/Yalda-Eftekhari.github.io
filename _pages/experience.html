@@ -8,12 +8,27 @@ author_profile: true
 {% include base_path %}
 
 <style>
+  :root {
+    --exp-card-bg: #fafafa;
+    --exp-card-border: #222;
+    --exp-card-text: #111;
+    --exp-meta: #444;
+  }
+
+  html[data-theme="dark"] {
+    --exp-card-bg: #2c2c2c;
+    --exp-card-border: #888;
+    --exp-card-text: #f5f5f5;
+    --exp-meta: #d0d0d0;
+  }
+
   .exp-card {
-    border: 2px solid #222;
+    border: 2px solid var(--exp-card-border);
     padding: 1.2rem 1.5rem;
     border-radius: 8px;
     margin-bottom: 2rem;
-    background: #fafafa;
+    background: var(--exp-card-bg);
+    color: var(--exp-card-text);
   }
   .exp-card h3 {
     margin-top: 0;
@@ -21,7 +36,7 @@ author_profile: true
   .exp-meta {
     font-style: italic;
     margin-bottom: 0.6rem;
-    color: #444;
+    color: var(--exp-meta);
   }
 </style>
 
