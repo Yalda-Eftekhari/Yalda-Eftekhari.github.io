@@ -9,25 +9,37 @@ author_profile: true
 
 <style>
   :root {
-    --proj-card-bg: #fcfcfc;
-    --proj-card-border: #ccc;
-    --proj-card-text: #111;
-    --proj-meta: #666;
-    --proj-link-text: #1f3b57;
-    --proj-link-hover: #0f2438;
-    --proj-link-underline: rgba(31, 59, 87, 0.25);
+    --proj-card-bg: #f7f9fd;
+    --proj-card-border: #9bb4e8;
+    --proj-card-text: #0f2038;
+    --proj-meta: #5b6b85;
+    --proj-link-text: #2b5fb8;
+    --proj-link-hover: #1a3f7a;
+    --proj-link-underline: rgba(43, 95, 184, 0.22);
+    --proj-divider: #c8d5f0;
     --proj-icon-filter: brightness(0) saturate(100%) invert(9%) sepia(9%) saturate(1507%) hue-rotate(169deg) brightness(92%) contrast(87%);
+    --proj-context-bg: #e9f1ff;
+    --proj-context-bg-2: #ffffff;
+    --proj-context-border: #8cb5ff;
+    --proj-context-text: #0f3266;
+    --proj-context-shadow: rgba(12, 64, 140, 0.15);
   }
 
   html[data-theme="dark"] {
-    --proj-card-bg: #2c2c2c;
-    --proj-card-border: #666;
-    --proj-card-text: #f5f5f5;
-    --proj-meta: #d0d0d0;
-    --proj-link-text: #d9e7ff;
-    --proj-link-hover: #fff;
-    --proj-link-underline: rgba(217, 231, 255, 0.35);
+    --proj-card-bg: #1a1f2b;
+    --proj-card-border: #28385c;
+    --proj-card-text: #e3e9f7;
+    --proj-meta: #b5c0d9;
+    --proj-link-text: #94b9ff;
+    --proj-link-hover: #d6e5ff;
+    --proj-link-underline: rgba(148, 185, 255, 0.35);
+    --proj-divider: #3a4a69;
     --proj-icon-filter: brightness(0) invert(88%);
+    --proj-context-bg: #1e2936;
+    --proj-context-bg-2: #0f1624;
+    --proj-context-border: #5ea2ff;
+    --proj-context-text: #d9e7ff;
+    --proj-context-shadow: rgba(0, 0, 0, 0.35);
   }
 
   .proj-card {
@@ -37,15 +49,22 @@ author_profile: true
     margin-bottom: 1.6rem;
     background: var(--proj-card-bg);
     color: var(--proj-card-text);
+    box-shadow: 0 10px 24px rgba(20, 50, 100, 0.12);
   }
   .proj-card h3 {
     margin-top: 0;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--proj-divider);
   }
   .proj-meta {
-    float: right;
     color: var(--proj-meta);
     font-weight: 500;
+    margin-left: auto;
   }
   .proj-link {
     display: inline-flex;
@@ -87,19 +106,192 @@ author_profile: true
     filter: none;
     border-radius: 3px;
   }
+  .proj-title {
+    font-weight: inherit;
+  }
+  .proj-context {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.2rem 0.65rem;
+    border-radius: 999px;
+    border: 1.5px solid var(--proj-context-border);
+    background: linear-gradient(135deg, var(--proj-context-bg), var(--proj-context-bg-2));
+    color: var(--proj-context-text);
+    font-weight: 750;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.83rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+  .proj-context::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--proj-context-border);
+    box-shadow: 0 0 0 4px rgba(140, 181, 255, 0.35);
+  }
+  .proj-skills {
+    margin-top: 0.55rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .proj-skills-label {
+    font-weight: 750;
+    color: var(--proj-card-text);
+    letter-spacing: 0.05em;
+  }
+  .proj-skill-chip {
+    border: 1px solid var(--proj-divider);
+    background: linear-gradient(135deg, var(--proj-card-bg), var(--proj-card-bg));
+    color: var(--proj-meta);
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    letter-spacing: 0.01em;
+  }
 </style>
 
 <div class="proj-card">
   <h3>
-    3D Tree Detection from LiDAR Data
+    <span class="proj-title">Glomeruli Segmentation Pipelines</span>
+    <span class="proj-context">Digital Pathology</span>
+    <span class="proj-meta">Dec. 2024 – Jun. 2025</span>
+  </h3>
+  <ul>
+    <li>
+      Built and benchmarked deep-learning pipelines for glomeruli segmentation using <strong>U-Net</strong>, <strong>Mask R-CNN</strong>, and <strong>Cerberus</strong>, with full preprocessing (tiling, filtering, augmentation) for high-resolution PAS kidney biopsies.
+    </li>
+    <li>
+      Achieved <strong>U-Net</strong> semantic Dice up to <strong>0.84</strong> and <strong>Mask R-CNN</strong> mAP@0.50 up to <strong>0.91</strong>, enabling reliable glomerulus segmentation across tissue types.
+    </li>
+    <li>
+      Delivered a reproducible, high-throughput analysis workflow supporting <strong>digital pathology</strong> assessment and model comparison under multiple hyperparameter regimes.
+    </li>
+  </ul>
+  <div class="proj-skills">
+    <span class="proj-skills-label">Skills:</span>
+    <span class="proj-skill-chip">Digital Pathology</span>
+    <span class="proj-skill-chip">U-Net</span>
+    <span class="proj-skill-chip">Mask R-CNN</span>
+    <span class="proj-skill-chip">Segmentation</span>
+    <span class="proj-skill-chip">Python</span>
+    <span class="proj-skill-chip">PyTorch</span>
+  </div>
+  <a class="proj-link" href="https://github.com/Yalda-Eftekhari/glomeruli_segmentation" target="_blank" rel="noopener">
+    <img class="proj-link-icon" src="{{ '/images/github_icon.png' | relative_url }}" alt="GitHub icon">
+    <span>View on GitHub</span>
+  </a>
+</div>
+
+<div class="proj-card">
+  <h3>
+    <span class="proj-title">Generation of Images from Descriptive Spatial Information</span>
+    <span class="proj-context">Generative AI</span>
+    <span class="proj-meta">Sep 2025–Jan 2026 (in progress)</span>
+  </h3>
+  <ul>
+    <li>
+      Investigating text-to-image generation methods that reliably preserve <strong>spatial relations</strong>, reducing misplaced, overlapping, or constraint-violating structures in synthesized scenes.    </li>
+    <li>
+      Designing techniques to encode <strong>structural and positional cues</strong> from language, enabling generative models to follow spatial layout logic while maintaining visual realism.    </li>
+    <li>
+      Achieving realistic vessel synthesis that preserves topology and respects organ boundaries, validated through <strong>relational accuracy</strong>, geometric containment checks, and improved spatial-fidelity scores.    </li>
+  </ul>
+  <div class="proj-skills">
+    <span class="proj-skills-label">Skills:</span>
+    <span class="proj-skill-chip">Medical image synthesis & analysis</span>
+    <span class="proj-skill-chip">Diffusion Models</span>
+    <span class="proj-skill-chip">PyTorch</span>
+  </div>
+</div>
+
+<div class="proj-card">
+  <h3>
+    <span class="proj-title">ViT-GCT Implementation</span>
+    <span class="proj-context">Face Recognition</span>
+    <span class="proj-meta">Sep 2025–Jan 2026 (in progress)</span>
+  </h3>
+  <ul>
+    <li>
+      Implementing the ViT-GCT architecture, integrating a learnable <strong>Global Context Token</strong> to enhance global–local feature interaction and improve discriminative face representations.
+    </li>
+    <li>
+      Reproducing and benchmarking <strong>CLS</strong>, <strong>CPE</strong>, and <strong>CPE+CLS</strong> token-aggregation baselines to match published experimental results across major FR datasets, with focus on the metric <strong>TAR @ FAR</strong>.
+    </li>
+    <li>
+      Analyzing <strong>attention maps</strong> and patch-wise discriminative patterns to confirm GCT-driven focus on key facial regions, especially the eyes, and iterating on training strategies toward expected SOTA-level gains.
+    </li>
+  </ul>
+  <div class="proj-skills">
+    <span class="proj-skills-label">Skills:</span>
+    <span class="proj-skill-chip">Vision Transformers (ViT)</span>
+    <span class="proj-skill-chip">Deep Learning</span>
+    <span class="proj-skill-chip">PyTorch</span>
+    <span class="proj-skill-chip">Attention Mechanisms</span>
+  </div>
+</div>
+
+<div class="proj-card">
+  <h3>
+    <span class="proj-title">MPI Meet-in-the-Middle</span>
+    <span class="proj-context">Parallel Computing</span>
+    <span class="proj-meta">Dec. 2024</span>
+  </h3>
+  <ul>
+    <li>
+      Developed an <strong>MPI + OpenMP</strong> meet-in-the-middle attack on the <strong>Speck64/128</strong> block cipher, parallelizing golden-claw dictionary build and probe across nodes/threads to recover key pairs from chosen plaintext/ciphertext pairs.
+    </li>
+    <li>
+      Designed a memory-efficient linear-probing hash table with deterministic batch exchange (<strong>MPI_Alltoall</strong>) to shard candidate spaces and avoid bottlenecks, validated against a sequential baseline.
+    </li>
+  </ul>
+  <div class="proj-skills">
+    <span class="proj-skills-label">Skills:</span>
+    <span class="proj-skill-chip">HPC</span>
+    <span class="proj-skill-chip">MPI</span>
+    <span class="proj-skill-chip">OpenMP</span>
+    <span class="proj-skill-chip">C++</span>
+    <span class="proj-skill-chip">Distributed Systems</span>
+  </div>
+  <a class="proj-link" href="https://github.com/Yalda-Eftekhari/MPI-speck-mitm" target="_blank" rel="noopener">
+    <img class="proj-link-icon" src="{{ '/images/github_icon.png' | relative_url }}" alt="GitHub icon">
+    <span>View on GitHub</span>
+  </a>
+</div>
+
+<div class="proj-card">
+  <h3>
+    <span class="proj-title">3D Tree Detection from LiDAR Data</span>
+    <span class="proj-context">3D Vision</span>
     <span class="proj-meta">Feb. 2024 – Aug. 2025</span>
   </h3>
   <ul>
     <li>
-      Built a 3D tree detection And Modeling workflow using <strong>Open3D</strong>, <strong>OpenAlea</strong>, and <strong>Blender</strong>.
-      Applied <strong>RANSAC</strong> + <strong>DBSCAN</strong> to reduce LiDAR points by <strong>90%</strong> while preserving geometry.
+      Built a complete 3D tree-detection and modeling pipeline using <strong>Open3D</strong>, <strong>OpenAlea</strong>, and <strong>Blender</strong>.
+    </li>
+    <li>
+      Applied <strong>RANSAC</strong> ground removal, <strong>DBSCAN</strong> clustering, and geometric filtering to detect trees, and used <strong>alpha-shape simplification</strong> to extract structural parameters with ~90% point-reduction.
+    </li>
+    <li>
+      Reconstructed trees using <strong>Weber–Penn</strong> procedural modeling, producing crown-type-aware models and Blender/OpenAlea 3D visualizations with turntable animations.
     </li>
   </ul>
+  <div class="proj-skills">
+    <span class="proj-skills-label">Skills:</span>
+    <span class="proj-skill-chip">LiDAR Processing</span>
+    <span class="proj-skill-chip">Open3D</span>
+    <span class="proj-skill-chip">Point-Cloud Segmentation</span>
+    <span class="proj-skill-chip">Blender</span>
+  </div>
   <a class="proj-link" href="https://github.com/Yalda-Eftekhari/3D-Tree-Detection-And-Modeling-From-LiDAR-Data" target="_blank" rel="noopener">
     <img class="proj-link-icon" src="{{ '/images/github_icon.png' | relative_url }}" alt="GitHub icon">
     <span>View on GitHub</span>
@@ -108,45 +300,62 @@ author_profile: true
 
 <div class="proj-card">
   <h3>
-    Web Scraping & ML for Data Analysis
+    <span class="proj-title">ML-Based Evaluation for Urban Attractiveness</span>
+    <span class="proj-context">Data Pipelines</span>
     <span class="proj-meta">Feb. 2024 – Aug. 2025</span>
   </h3>
   <ul>
     <li>
-      Conducted ML analysis (PCA, clustering, time-series) using <strong>scikit-learn</strong>.
-      Created lightweight Python scrapers to gather real-world datasets.
+      Collected multi-source urban data (<strong>economy</strong>, <strong>rent</strong>, <strong>OSM facilities</strong>, <strong>AQI</strong>, <strong>climate</strong>, <strong>crime</strong>) to answer the question “What makes a good city to live in France?” using data-driven analysis across 20 cities.
+    </li>
+    <li>
+      Applied <strong>PCA</strong>, hierarchical clustering, <strong>KMeans</strong>, time-series forecasting (<strong>Linear Regression</strong>, <strong>Polynomial Regression</strong>, <strong>ARIMA</strong>), and <strong>Random Forest + SHAP</strong> to model population attractiveness, capturing <strong>83%</strong> variance in the first 8 principal components.
+    </li>
+    <li>
+      Built automated scraping pipelines and <strong>Overpass API</strong> and performed full statistical and exploratory analysis including correlations, seasonal climate trends, AQI evolution, and rental structure.
     </li>
   </ul>
-  <!--
-  <a class="proj-link" href="https://github.com/yourusername/webscraping-ml" target="_blank" rel="noopener">
-    <img class="proj-link-icon" src="{{ '/images/github_icon.png' | relative_url }}" alt="GitHub icon">
-    <span>View on GitHub</span>
-  </a>
-  -->
-</div>
+  <div class="proj-skills">
+    <span class="proj-skills-label">Skills:</span>
+    <span class="proj-skill-chip">Web Scraping</span>
+    <span class="proj-skill-chip">Data Mining</span>
+    <span class="proj-skill-chip">Machine Learning</span>
+    <span class="proj-skill-chip">Python (Selenium, BeautifulSoup, Overpass API)</span>
+    <span class="proj-skill-chip">PCA and Clustering</span>
+  </div>
+  </div>
 
 <div class="proj-card">
   <h3>
-    Text Classification Benchmark Using BERT
+    <span class="proj-title">Text Classification Benchmark</span>
+    <span class="proj-context">NLP Benchmarking</span>
     <span class="proj-meta">Feb. 2024 – Aug. 2025</span>
   </h3>
   <ul>
     <li>
-      Fine-tuned <strong>BERT</strong> and benchmarked against <strong>SVM</strong>, <strong>LogReg</strong>, and <strong>LSTM</strong>
-      models using accuracy, F1, and recall.
+      Benchmarked fine-tuned <strong>DistilBERT</strong>, <strong>SVM</strong>, <strong>Logistic Regression</strong>, and <strong>LSTM</strong> on balanced movie reviews and highly imbalanced presidential speeches, evaluating preprocessing choices and imbalance-handling strategies across both tasks.
+    </li>
+    <li>
+      Reached <strong>F1 96.73</strong> on the movie sentiment task after optimizing chunking, tokenization, and fine-tuning for long English reviews.
+    </li>
+    <li>
+      Achieved <strong>F1 64.27</strong> on the minority class for the president task by applying targeted balancing methods and evaluating models under severe class imbalance.
     </li>
   </ul>
-  <!--
-  <a class="proj-link" href="https://github.com/yourusername/bert-text-classification" target="_blank" rel="noopener">
-    <img class="proj-link-icon" src="{{ '/images/github_icon.png' | relative_url }}" alt="GitHub icon">
-    <span>View on GitHub</span>
-  </a>
-  -->
-</div>
-
+  <div class="proj-skills">
+    <span class="proj-skills-label">Skills:</span>
+    <span class="proj-skill-chip">Transformers (BERT, DistilBERT)</span>
+    <span class="proj-skill-chip">Text Classification</span>
+    <span class="proj-skill-chip">Imbalanced Learning</span>
+    <span class="proj-skill-chip">NLP Preprocessing</span>
+    <span class="proj-skill-chip">PyTorch / HuggingFace</span>
+  </div>
+  </div>
+<!-- 
 <div class="proj-card">
   <h3>
-    Applied Image Processing
+    <span class="proj-title">Applied Image Processing</span>
+    <span class="proj-context">Computer Vision</span>
     <span class="proj-meta">Sep. 2024 – Jan. 2025</span>
   </h3>
   <ul>
@@ -155,10 +364,13 @@ author_profile: true
       Applied <strong>PCA</strong> and <strong>Eigenfaces</strong> for feature extraction.
     </li>
   </ul>
-  <!--
-  <a class="proj-link" href="https://github.com/yourusername/image-processing-project" target="_blank" rel="noopener">
-    <img class="proj-link-icon" src="{{ '/images/github_icon.png' | relative_url }}" alt="GitHub icon">
-    <span>View on GitHub</span>
-  </a>
-  -->
-</div>
+  <div class="proj-skills">
+    <span class="proj-skills-label">Skills:</span>
+    <span class="proj-skill-chip">Computer Vision</span>
+    <span class="proj-skill-chip">Image Processing</span>
+    <span class="proj-skill-chip">OpenCV</span>
+    <span class="proj-skill-chip">Feature Extraction</span>
+    <span class="proj-skill-chip">NumPy</span>
+    <span class="proj-skill-chip">Signal Processing</span>
+  </div>
+  </div> -->

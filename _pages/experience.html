@@ -9,58 +9,104 @@ author_profile: true
 
 <style>
   :root {
-    --exp-card-bg: #fafafa;
-    --exp-card-border: #222;
-    --exp-card-text: #111;
-    --exp-meta: #444;
+    --proj-card-bg: #f7f9fd;
+    --proj-card-border: #9bb4e8;
+    --proj-card-text: #0f2038;
+    --proj-meta: #5b6b85;
+    --proj-link-text: #2b5fb8;
+    --proj-link-hover: #1a3f7a;
+    --proj-link-underline: rgba(43, 95, 184, 0.22);
+    --proj-divider: #c8d5f0;
+    --proj-icon-filter: brightness(0) saturate(100%) invert(9%) sepia(9%) saturate(1507%) hue-rotate(169deg) brightness(92%) contrast(87%);
+    --proj-context-bg: #e9f1ff;
+    --proj-context-bg-2: #ffffff;
+    --proj-context-border: #8cb5ff;
+    --proj-context-text: #0f3266;
+    --proj-context-shadow: rgba(12, 64, 140, 0.15);
   }
 
   html[data-theme="dark"] {
-    --exp-card-bg: #2c2c2c;
-    --exp-card-border: #888;
-    --exp-card-text: #f5f5f5;
-    --exp-meta: #d0d0d0;
+    --proj-card-bg: #1a1f2b;
+    --proj-card-border: #28385c;
+    --proj-card-text: #e3e9f7;
+    --proj-meta: #b5c0d9;
+    --proj-link-text: #94b9ff;
+    --proj-link-hover: #d6e5ff;
+    --proj-link-underline: rgba(148, 185, 255, 0.35);
+    --proj-divider: #3a4a69;
+    --proj-icon-filter: brightness(0) invert(88%);
+    --proj-context-bg: #1e2936;
+    --proj-context-bg-2: #0f1624;
+    --proj-context-border: #5ea2ff;
+    --proj-context-text: #d9e7ff;
+    --proj-context-shadow: rgba(0, 0, 0, 0.35);
   }
 
-  .exp-card {
-    border: 2px solid var(--exp-card-border);
-    padding: 1.2rem 1.5rem;
-    border-radius: 8px;
-    margin-bottom: 2rem;
-    background: var(--exp-card-bg);
-    color: var(--exp-card-text);
+  .proj-card {
+    border: 1.5px solid var(--proj-card-border);
+    padding: 1rem 1.3rem;
+    border-radius: 6px;
+    margin-bottom: 1.6rem;
+    background: var(--proj-card-bg);
+    color: var(--proj-card-text);
+    box-shadow: 0 10px 24px rgba(20, 50, 100, 0.12);
   }
-  .exp-card h3 {
+  .proj-card h3 {
     margin-top: 0;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--proj-divider);
   }
-  .exp-meta {
-    font-style: italic;
-    margin-bottom: 0.6rem;
-    color: var(--exp-meta);
+  .proj-meta {
+    color: var(--proj-meta);
+    font-weight: 500;
+    margin-left: auto;
+  }
+  .proj-context-plain {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    color: var(--proj-meta);
+    font-weight: 600;
+  }
+  .proj-title {
+    font-weight: inherit;
+  }
+  .proj-context {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.2rem 0.65rem;
+    border-radius: 999px;
+    border: 1.5px solid var(--proj-context-border);
+    background: linear-gradient(135deg, var(--proj-context-bg), var(--proj-context-bg-2));
+    color: var(--proj-context-text);
+    font-weight: 750;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.83rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+  .proj-context::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--proj-context-border);
+    box-shadow: 0 0 0 4px rgba(140, 181, 255, 0.35);
   }
 </style>
 
-<div class="exp-card">
+<div class="proj-card">
   <h3>
-    Research Assistant
-    <span style="float:right;">Dec. 2024 – Jun. 2025</span>
+    <span class="proj-title">Research Assistant</span>
+    <span class="proj-context-plain">Amirkabir University of Technology</span>
+    <span class="proj-meta">May 2023 – Oct. 2023</span>
   </h3>
-  <p class="exp-meta">Institut Pasteur – Paris, France</p>
-  <ul>
-    <li>
-      Engineered and benchmarked deep learning pipelines for glomeruli segmentation in renal pathology using
-      <strong>U-Net</strong>, <strong>Mask R-CNN</strong>, and multi-task models (<strong>Cerberus</strong>).
-    </li>
-    <li>Enabled reproducible and high-throughput biopsy analysis for improved kidney disease assessment.</li>
-  </ul>
-</div>
-
-<div class="exp-card">
-  <h3>
-    Research Assistant
-    <span style="float:right;">May 2023 – Oct. 2023</span>
-  </h3>
-  <p class="exp-meta">Amirkabir University of Technology – Tehran, Iran</p>
   <ul>
     <li>
       Implemented deep image restoration models (<strong>MIMO-UNet</strong>, <strong>HiNet</strong>) for deblurring tasks,
@@ -70,12 +116,12 @@ author_profile: true
   </ul>
 </div>
 
-<div class="exp-card">
+<div class="proj-card">
   <h3>
-    Backend Developer
-    <span style="float:right;">Aug. 2022 – Aug. 2024</span>
+    <span class="proj-title">Backend Developer</span>
+    <span class="proj-context-plain">ASA Co</span>
+    <span class="proj-meta">Aug. 2022 – Aug. 2024</span>
   </h3>
-  <p class="exp-meta">ASA Co – Tehran, Iran</p>
   <ul>
     <li>
       Collaborated in an agile 10-member team maintaining backend infrastructure for a Robo-Adviser platform
@@ -85,5 +131,18 @@ author_profile: true
       Developed and monitored <strong>RESTful APIs</strong> using <strong>FastAPI</strong> and <strong>PostgreSQL</strong>,
       enhancing reliability and reducing API latency by 15%.
     </li>
+  </ul>
+</div>
+
+<div class="proj-card">
+  <h3>
+    <span class="proj-title">Undergraduate Teaching Assistant</span>
+    <span class="proj-context-plain">Amirkabir University of Technology</span>
+    <span class="proj-meta">Feb. 2021 – Jun. 2022</span>
+  </h3>
+  <ul>
+    <li>Principles of Software Design &amp; Workshop — Jan. 2022 to Jun. 2022 (6 mos)</li>
+    <li>Advanced Programming — Aug. 2021 to Jan. 2022 (6 mos)</li>
+    <li>Introduction to Computer &amp; Programming — Feb. 2021 to Jul. 2021 (6 mos)</li>
   </ul>
 </div>

@@ -9,58 +9,105 @@ author_profile: true
 
 <style>
   :root {
-    --edu-card-bg: #fcfcfc;
-    --edu-card-border: #ccc;
-    --edu-card-text: #111;
-    --edu-muted: #666;
+    --proj-card-bg: #f7f9fd;
+    --proj-card-border: #9bb4e8;
+    --proj-card-text: #0f2038;
+    --proj-meta: #5b6b85;
+    --proj-link-text: #2b5fb8;
+    --proj-link-hover: #1a3f7a;
+    --proj-link-underline: rgba(43, 95, 184, 0.22);
+    --proj-divider: #c8d5f0;
+    --proj-icon-filter: brightness(0) saturate(100%) invert(9%) sepia(9%) saturate(1507%) hue-rotate(169deg) brightness(92%) contrast(87%);
+    --proj-context-bg: #e9f1ff;
+    --proj-context-bg-2: #ffffff;
+    --proj-context-border: #8cb5ff;
+    --proj-context-text: #0f3266;
+    --proj-context-shadow: rgba(12, 64, 140, 0.15);
   }
 
-  html[data-theme="dark"],
-  :root[data-theme="dark"] {
-    --edu-card-bg: #2c2c2c;
-    --edu-card-border: #666;
-    --edu-card-text: #f5f5f5;
-    --edu-muted: #bdbdbd;
+  html[data-theme="dark"] {
+    --proj-card-bg: #1a1f2b;
+    --proj-card-border: #28385c;
+    --proj-card-text: #e3e9f7;
+    --proj-meta: #b5c0d9;
+    --proj-link-text: #94b9ff;
+    --proj-link-hover: #d6e5ff;
+    --proj-link-underline: rgba(148, 185, 255, 0.35);
+    --proj-divider: #3a4a69;
+    --proj-icon-filter: brightness(0) invert(88%);
+    --proj-context-bg: #1e2936;
+    --proj-context-bg-2: #0f1624;
+    --proj-context-border: #5ea2ff;
+    --proj-context-text: #d9e7ff;
+    --proj-context-shadow: rgba(0, 0, 0, 0.35);
   }
 
-  .edu-card {
-    border: 1.5px solid var(--edu-card-border);
-    padding: 1.2rem 1.4rem;
+  .proj-card {
+    border: 1.5px solid var(--proj-card-border);
+    padding: 1rem 1.3rem;
     border-radius: 6px;
-    margin-bottom: 1.8rem;
-    background: var(--edu-card-bg);
-    color: var(--edu-card-text);
+    margin-bottom: 1.6rem;
+    background: var(--proj-card-bg);
+    color: var(--proj-card-text);
+    box-shadow: 0 10px 24px rgba(20, 50, 100, 0.12);
   }
-  .edu-card h3 {
+  .proj-card h3 {
     margin-top: 0;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--proj-divider);
   }
-  .edu-meta {
-    float: right;
-    color: var(--edu-muted);
+  .proj-meta {
+    color: var(--proj-meta);
     font-weight: 500;
+    margin-left: auto;
   }
-  .course-list {
-    margin-top: 0.6rem;
-    padding-left: 1.2rem;
-    color: var(--edu-card-text);
+  .proj-context-plain {
+    display: block;
+    width: 100%;
+    margin: 0;
+    margin-top: -0.1rem;
+    color: var(--proj-meta);
+    font-weight: 600;
   }
-  .course-list li {
-    margin-bottom: 0.3rem;
+  .proj-title {
+    font-weight: inherit;
   }
-  h2 {
-    color: var(--edu-card-text);
+  .proj-context {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.2rem 0.65rem;
+    border-radius: 999px;
+    border: 1.5px solid var(--proj-context-border);
+    background: linear-gradient(135deg, var(--proj-context-bg), var(--proj-context-bg-2));
+    color: var(--proj-context-text);
+    font-weight: 750;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.83rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+  .proj-context::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--proj-context-border);
+    box-shadow: 0 0 0 4px rgba(140, 181, 255, 0.35);
   }
 </style>
 
-<!-- ================= MASTER ================= -->
-<div class="edu-card">
+<div class="proj-card">
   <h3>
-    Master of Science in Computer Science (Image Processing)
-    <span class="edu-meta">Sep. 2024 – Expected Sep. 2026</span>
+    <span class="proj-title">Master of Science in Computer Science (Image Processing)</span>
+    <span class="proj-context-plain">Sorbonne University — Paris, France</span>
+    <span class="proj-meta">Sep. 2024 – Expected Sep. 2026</span>
   </h3>
-  <p><em>Sorbonne University — Paris, France</em></p>
-
   <strong>Key Courses:</strong>
   <ul class="course-list">
     <li>Deep Learning</li>
@@ -76,17 +123,13 @@ author_profile: true
   </ul>
 </div>
 
-<!-- ================= BACHELOR ================= -->
-<div class="edu-card">
+<div class="proj-card">
   <h3>
-    Bachelor of Science in Computer Science
-    <span class="edu-meta">Sep. 2019 – Oct. 2023</span>
+    <span class="proj-title">Bachelor of Science in Computer Science</span>
+    <span class="proj-context-plain">Amirkabir University of Technology (Tehran Polytechnic) — Tehran, Iran</span>
+    <span class="proj-meta">Sep. 2019 – Oct. 2023</span>
   </h3>
-  <p>
-    <em>Amirkabir University of Technology (Tehran Polytechnic) — Tehran, Iran</em><br>
-    <strong>GPA:</strong> 18.67 / 20
-  </p>
-
+  <p><strong>GPA:</strong> 18.67 / 20</p>
   <strong>Key Courses:</strong>
   <ul class="course-list">
     <li>Algorithms</li>
