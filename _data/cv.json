@@ -5,7 +5,7 @@
     "email": "yalda.ef@gmail.com",
     "phone": "+33 7 66 45 82 81",
     "website": "https://yalda-eftekhari.github.io",
-    "summary": "Master student in Computer Science at Sorbonne University, specializing in image processing, computer vision, and deep learning. Experienced in developing end-to-end ML and vision pipelines using PyTorch, TensorFlow, and OpenCV. Passionate about applying AI to real-world problems, innovation, and scalable software solutions. Seeking a 6-month internship (Mar–Aug 2025) to contribute to applied machine learning and computer vision projects in research or industry.",
+    "summary": "Master student in Computer Science at Sorbonne University, specializing in image processing, computer vision, and deep learning. Experienced in developing end-to-end ML and vision pipelines using PyTorch and OpenCV. Passionate about applying AI to real-world problems, innovation, and scalable software solutions. Seeking a 6-month internship (Feb–Sep 2025) to contribute to applied machine learning and computer vision projects in research or industry.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -106,7 +106,7 @@
   ],
   "skills": [
     {
-      "name": "Programming",
+      "name": "Programming Languages",
       "level": "",
       "keywords": [
         "Python",
@@ -116,77 +116,56 @@
       ]
     },
     {
-      "name": "Machine Learning & Computer Vision",
+      "name": "Machine Learning & AI",
       "level": "",
       "keywords": [
         "PyTorch",
+        "Hugging Face Transformers",
         "scikit-learn",
         "XGBoost",
+        "NumPy",
+        "Pandas",
+        "Matplotlib",
+        "Seaborn",
+        "BERT",
+        "LangGraph",
         "OpenCV",
         "scikit-image",
-        "Segmentation",
-        "Object Detection"
+        "Segmentation"
       ]
     },
     {
-      "name": "3D Processing",
-      "level": "",
-      "keywords": [
-        "Blender",
-        "Point Cloud Processing"
-      ]
-    },
-    {
-      "name": "Natural Language Processing",
-      "level": "",
-      "keywords": [
-        "BERT",
-        "Hugging Face Transformers",
-        "spaCy",
-        "LangGraph"
-      ]
-    },
-    {
-      "name": "MLOps & Cloud",
+      "name": "DevOps & Backend",
       "level": "",
       "keywords": [
         "Docker",
         "Git",
         "GitHub Actions",
-        "AWS (S3, EC2)",
-        "MLflow",
-        "Weights & Biases",
-        "Grafana",
-        "Prometheus"
-      ]
-    },
-    {
-      "name": "Backend & Databases",
-      "level": "",
-      "keywords": [
+        "AWS",
         "FastAPI",
         "Django",
-        "RESTful APIs",
-        "PostgreSQL"
+        "PostgreSQL",
+        "Redis"
       ]
     },
     {
-      "name": "Data Analysis & Visualization",
+      "name": "Tools",
       "level": "",
       "keywords": [
-        "NumPy",
-        "Pandas",
-        "Matplotlib",
-        "Seaborn"
-      ]
-    },
-    {
-      "name": "Software & Tools",
-      "level": "",
-      "keywords": [
+        "Blender",
         "Jupyter Notebook",
-        "LaTeX",
         "Linux CLI"
+      ]
+    },
+    {
+      "name": "Soft Skills",
+      "level": "",
+      "keywords": [
+        "Problem-Solving",
+        "Teamwork",
+        "Communication",
+        "Adaptability",
+        "Ownership"
       ]
     }
   ],
